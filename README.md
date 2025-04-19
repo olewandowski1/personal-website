@@ -60,3 +60,9 @@ You can start editing the page by modifying `app/page.tsx`.
 ## Reference
 
 - **https://github.com/ibelick/nim**
+
+## Env
+
+```
+NEXT_PUBLIC_REPO_URL=https://github.com/your-profile-name/repo-name
+```
