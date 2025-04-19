@@ -47,6 +47,28 @@ export const PROJECTS = [
     imageUrl: '/openlmis.png',
     githubUrl: 'https://github.com/openlmis',
     websiteUrl: '',
+    featured: {
+      title: 'New OpenLMIS UI PoC',
+      subtitle:
+        'A proof of concept for a new UI for OpenLMIS demonstrating the performance and scalability of the new architecture.',
+      description:
+        'Defined the technology stack (e.g., React, TypeScript, etc.), architected the foundational structure, and developed the core component library for this proof-of-concept UI, establishing the technical groundwork for the migration.',
+      techStack: [
+        'React',
+        'TypeScript',
+        'Tailwind CSS',
+        'Vite',
+        'Tanstack Query',
+        'Tanstack Router',
+        'Shadcn UI',
+        'Zod',
+        'React Hook Form',
+        'i18n-react',
+        'Zustand',
+      ],
+      githubUrl: 'https://github.com/olewandowski1/openlmis-ui-poc',
+      websiteUrl: 'https://openlmis-ui-poc.vercel.app/login',
+    },
   },
   {
     title: 'OpenMRS',

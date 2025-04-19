@@ -21,6 +21,7 @@ export function SelectedProjects() {
               imageUrl,
               websiteUrl,
               githubUrl,
+              featured,
             }) => (
               <ProjectCard
                 key={title}
@@ -31,6 +32,7 @@ export function SelectedProjects() {
                 imageUrl={imageUrl}
                 websiteUrl={websiteUrl}
                 githubUrl={githubUrl}
+                featured={featured}
               />
             )
           )}

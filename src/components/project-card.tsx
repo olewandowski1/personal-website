@@ -1,3 +1,4 @@
+import { FeaturedProjectHoverCard } from '@/components/featured-project-hover-card';
 import { Badge } from '@/components/ui/badge';
 import {
   Card,
@@ -10,6 +11,15 @@ import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+export type FeaturedProject = {
+  title: string;
+  subtitle: string;
+  description: string;
+  techStack: string[];
+  websiteUrl?: string;
+  githubUrl?: string;
+};
+
 type ProjectCardProps = {
   title: string;
   subtitle: string;
@@ -18,6 +28,7 @@ type ProjectCardProps = {
   imageUrl: string;
   githubUrl?: string;
   websiteUrl?: string;
+  featured?: FeaturedProject;
 };
 
 export function ProjectCard({
@@ -28,6 +39,7 @@ export function ProjectCard({
   imageUrl,
   githubUrl,
   websiteUrl,
+  featured,
 }: ProjectCardProps) {
   return (
     <Card className='p-1 overflow-hidden border-0 shadow-none md:p rounded-xl'>
@@ -41,6 +53,10 @@ export function ProjectCard({
             sizes='(max-width: 768px) 100vw, 50vw'
             priority
           />
+
+          {featured && (
+            <FeaturedProjectHoverCard featured={featured} imageUrl={imageUrl} />
+          )}
         </div>
         <CardTitle className='mt-2 font-semibold tracking-tight text-md'>
           {title}
