@@ -10,7 +10,7 @@ export function Footer() {
       <MaxWidthWrapper className='border-t'>
         <div className='flex items-center justify-between py-4'>
           <Link
-            href={process.env.NEXT_PUBLIC_SITE_URL || '/'}
+            href={process.env.NEXT_PUBLIC_REPO_URL || '/'}
             target='_blank'
             rel='noopener noreferrer'
           >
